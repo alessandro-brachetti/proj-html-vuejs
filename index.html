@@ -19,27 +19,29 @@
           <div class="logo-wrapper">
             <img src="./dist/img/logo-2.png" alt="Logo">
           </div>
-          <div class="links-wrapper">
-            <ul class="no-style d-flex">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Feature</li>
-              <li>Testimonials</li>
-              <li>Contact Us</li>
-              <div class="icon-search">
-                <i class="fas fa-search"></i>
-                
-              </div>
-              <div class="cart-wrapper">
-                <div class="cart-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </div>
-                <div class="cart-number">0</div>
-              </div>
-              <div class="btn-wrapper">
-                <button type="button" name="button">Get Started</button>
-              </div>
+          <div class="navbar-menu d-flex">
+            <ul class="no-style d-flex" v-for="link in navbarMenu">
+              <li>{{ link.name }}</li>
             </ul>
+            <div class="navbar-icons d-flex">
+              <i class="fas fa-search"></i>
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-number">0</span>
+            </div>
+            <div class="btn-wrapper">
+              <button type="button" name="button">Get Started</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="jumbo d-flex">
+          <div class="jumbo-left">
+            <h1>The biggest platform for your growth.</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+            <button type="button" name="button">Read More</button>
+          </div>
+          <div class="jumbo-right">
+            <img src="./dist/img/27-1.png" alt="3 people talking">
           </div>
         </div>
       </header>

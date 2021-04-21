@@ -1,60 +1,64 @@
 .navbar {
+  @include container-center(60%);
   justify-content: space-between;
   align-items: center;
   .logo-wrapper {
-    width: 42px;
+    width: 45px;
     height: 50px;
     img {
       width: 100%;
       height: 100%;
     }
   }
-  .links-wrapper {
+  .navbar-menu {
     ul {
       align-items: center;
-      & > * {
-        padding-left: 30px;
-        cursor: pointer;
-      }
-      li {
-        font-size: 15px;
-        font-weight: 500;
-        &:first-child {
-          color: $primary-blue;
-          padding-left: 0;
-          padding-bottom: 20px;
-          margin-bottom: -20px;
-          border-bottom: 2px solid $primary-blue;
-        }
-      }
-      .icon-search {
-        padding-left: 50px;
-      }
-      .cart-wrapper {
-        position: relative;
-        .cart-icon {
-          display: inline-block;
-        }
-        .cart-number {
-          display: inline-block;
-          background-color: $primary-blue;
-          color: #fff;
-          font-size: 12px;
-          padding: 1px 6px;
-          border-radius: 50%;
-          position: absolute;
-          bottom: 10px;
-          left: 40px;
-          z-index: -1;
-        }
-      }
-      .btn-wrapper {
-        padding-left: 50px;
-        button {
-          @include button;
+      &:not(:first-child) {
+        li {
           font-size: 15px;
           font-weight: 500;
+          cursor: pointer;
+          padding-left: 30px;
         }
+      }
+      &:first-child {
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        color: $primary-blue;
+        padding-left: 0;
+        border-bottom: 2px solid $primary-blue;
+      }
+
+    }
+    .navbar-icons {
+      padding-left: 50px;
+      align-items: center;
+      & > * {
+        cursor: pointer;
+      }
+      .fa-search {
+        padding-right: 20px;
+      }
+      span {
+        color: #fff;
+        background-color: $primary-blue;
+        border-radius: 50%;
+        padding: 0 6px;
+        font-size: 13px;
+        margin-left: -7px;
+        margin-top: -15px;
+        z-index: -1;
+      }
+    }
+
+
+    .btn-wrapper {
+      padding-left: 50px;
+      button {
+        @include button;
+        font-size: 15px;
+        font-weight: 500;
       }
     }
   }

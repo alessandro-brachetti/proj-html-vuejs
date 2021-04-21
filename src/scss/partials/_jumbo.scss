@@ -1,0 +1,32 @@
+.jumbo {
+  @include container-center(75%);
+  background-color: #f2f7ff;
+  border-radius: 8px;
+  margin-top: 10px;
+  .jumbo-left {
+    width: 45%;
+    padding: 50px 70px;
+    h1 {
+      font-size: 48px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 15px;
+      color: #8e989f;
+      margin-bottom: 50px;
+      margin-top: 15px;
+      line-height: 30px;
+    }
+    button {
+      @include button;
+      font-size: 16px;
+    }
+  }
+  .jumbo-right {
+    width: 55%;
+    img {
+      padding-top: 20px;
+      height: 110%;
+    }
+  }
+}

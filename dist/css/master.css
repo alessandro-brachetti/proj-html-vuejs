@@ -82,61 +82,65 @@ body {
   padding-bottom: 2em;
 }
 
+.pl-30 {
+  padding-left: 30px;
+}
+
 .navbar {
+  width: 60%;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
 .navbar .logo-wrapper {
-  width: 42px;
+  width: 45px;
   height: 50px;
 }
 .navbar .logo-wrapper img {
   width: 100%;
   height: 100%;
 }
-.navbar .links-wrapper ul {
+.navbar .navbar-menu ul {
   align-items: center;
 }
-.navbar .links-wrapper ul > * {
-  padding-left: 30px;
-  cursor: pointer;
-}
-.navbar .links-wrapper ul li {
+.navbar .navbar-menu ul:not(:first-child) li {
   font-size: 15px;
   font-weight: 500;
+  cursor: pointer;
+  padding-left: 30px;
 }
-.navbar .links-wrapper ul li:first-child {
+.navbar .navbar-menu ul:first-child {
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
   color: #377DFF;
   padding-left: 0;
-  padding-bottom: 20px;
-  margin-bottom: -20px;
   border-bottom: 2px solid #377DFF;
 }
-.navbar .links-wrapper ul .icon-search {
+.navbar .navbar-menu .navbar-icons {
   padding-left: 50px;
+  align-items: center;
 }
-.navbar .links-wrapper ul .cart-wrapper {
-  position: relative;
+.navbar .navbar-menu .navbar-icons > * {
+  cursor: pointer;
 }
-.navbar .links-wrapper ul .cart-wrapper .cart-icon {
-  display: inline-block;
+.navbar .navbar-menu .navbar-icons .fa-search {
+  padding-right: 20px;
 }
-.navbar .links-wrapper ul .cart-wrapper .cart-number {
-  display: inline-block;
-  background-color: #377DFF;
+.navbar .navbar-menu .navbar-icons span {
   color: #fff;
-  font-size: 12px;
-  padding: 1px 6px;
+  background-color: #377DFF;
   border-radius: 50%;
-  position: absolute;
-  bottom: 10px;
-  left: 40px;
+  padding: 0 6px;
+  font-size: 13px;
+  margin-left: -7px;
+  margin-top: -15px;
   z-index: -1;
 }
-.navbar .links-wrapper ul .btn-wrapper {
+.navbar .navbar-menu .btn-wrapper {
   padding-left: 50px;
 }
-.navbar .links-wrapper ul .btn-wrapper button {
+.navbar .navbar-menu .btn-wrapper button {
   padding: 13px 17px;
   border-radius: 3px;
   background-color: #377DFF;
@@ -146,7 +150,40 @@ body {
   font-weight: 500;
 }
 
-header {
-  width: 60%;
+.jumbo {
+  width: 75%;
   margin: 0 auto;
+  background-color: #f2f7ff;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.jumbo .jumbo-left {
+  width: 45%;
+  padding: 50px 70px;
+}
+.jumbo .jumbo-left h1 {
+  font-size: 48px;
+  font-weight: 400;
+}
+.jumbo .jumbo-left p {
+  font-size: 15px;
+  color: #8e989f;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  line-height: 30px;
+}
+.jumbo .jumbo-left button {
+  padding: 13px 17px;
+  border-radius: 3px;
+  background-color: #377DFF;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+.jumbo .jumbo-right {
+  width: 55%;
+}
+.jumbo .jumbo-right img {
+  padding-top: 20px;
+  height: 110%;
 }
