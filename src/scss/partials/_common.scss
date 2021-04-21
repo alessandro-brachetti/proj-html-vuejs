@@ -1,0 +1,19 @@
+.d-flex {
+  display: flex;
+}
+
+.no-style {
+  list-style: none;
+}
+
+@for $i from 1 through 8 {
+  .pt-#{$i} {
+    padding-top: 0.25em * $i;
+  }
+}
+
+@for $i from 1 through 8 {
+  .pb-#{$i} {
+    padding-bottom: 0.25em * $i;
+  }
+}

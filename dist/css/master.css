@@ -6,6 +6,147 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.no-style {
+  list-style: none;
+}
+
+.pt-1 {
+  padding-top: 0.25em;
+}
+
+.pt-2 {
+  padding-top: 0.5em;
+}
+
+.pt-3 {
+  padding-top: 0.75em;
+}
+
+.pt-4 {
+  padding-top: 1em;
+}
+
+.pt-5 {
+  padding-top: 1.25em;
+}
+
+.pt-6 {
+  padding-top: 1.5em;
+}
+
+.pt-7 {
+  padding-top: 1.75em;
+}
+
+.pt-8 {
+  padding-top: 2em;
+}
+
+.pb-1 {
+  padding-bottom: 0.25em;
+}
+
+.pb-2 {
+  padding-bottom: 0.5em;
+}
+
+.pb-3 {
+  padding-bottom: 0.75em;
+}
+
+.pb-4 {
+  padding-bottom: 1em;
+}
+
+.pb-5 {
+  padding-bottom: 1.25em;
+}
+
+.pb-6 {
+  padding-bottom: 1.5em;
+}
+
+.pb-7 {
+  padding-bottom: 1.75em;
+}
+
+.pb-8 {
+  padding-bottom: 2em;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo-wrapper {
+  width: 42px;
+  height: 50px;
+}
+.navbar .logo-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.navbar .links-wrapper ul {
+  align-items: center;
+}
+.navbar .links-wrapper ul > * {
+  padding-left: 30px;
+  cursor: pointer;
+}
+.navbar .links-wrapper ul li {
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar .links-wrapper ul li:first-child {
+  color: #377DFF;
+  padding-left: 0;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
+  border-bottom: 2px solid #377DFF;
+}
+.navbar .links-wrapper ul .icon-search {
+  padding-left: 50px;
+}
+.navbar .links-wrapper ul .cart-wrapper {
+  position: relative;
+}
+.navbar .links-wrapper ul .cart-wrapper .cart-icon {
+  display: inline-block;
+}
+.navbar .links-wrapper ul .cart-wrapper .cart-number {
+  display: inline-block;
+  background-color: #377DFF;
+  color: #fff;
+  font-size: 12px;
+  padding: 1px 6px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  z-index: -1;
+}
+.navbar .links-wrapper ul .btn-wrapper {
+  padding-left: 50px;
+}
+.navbar .links-wrapper ul .btn-wrapper button {
+  padding: 13px 17px;
+  border-radius: 3px;
+  background-color: #377DFF;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+header {
+  width: 60%;
+  margin: 0 auto;
 }
