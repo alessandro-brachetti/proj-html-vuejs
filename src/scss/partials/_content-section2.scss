@@ -1,0 +1,56 @@
+.tips {
+  @include container-center(60%);
+  align-items: center;
+  .tips-info {
+    width: 50%;
+    h3 {
+      @include section-title;
+    }
+    p {
+      @include paragraph;
+    }
+    .reporting {
+      align-items: center;
+
+      border: 1px solid #00000008;
+      box-shadow: 5px 30px 40px #0000000D;
+      padding: 30px 10px;
+      margin-top: 30px;
+      .reporting-img-wrapper {
+        padding-right: 20px;
+      }
+      .reporting-text-wrapper {
+        h4 {
+          font-size: 19px;
+          font-weight: 500;
+          color: $primary-blue;
+        }
+        p {
+          @include paragraph;
+        }
+      }
+    }
+    .technical {
+      align-items: center;
+
+      padding: 30px 11px;
+      margin-top: 30px;
+      .technical-img-wrapper {
+        padding-right: 20px;
+      }
+      .technical-text-wrapper {
+        h4 {
+          font-size: 19px;
+          font-weight: 500;
+        }
+        p {
+          @include paragraph;
+        }
+      }
+    }
+  }
+  .tips-img {
+    width: 50%;
+    padding-left: 30px;
+  }
+}

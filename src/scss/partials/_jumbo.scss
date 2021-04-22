@@ -11,11 +11,8 @@
       font-weight: 400;
     }
     p {
-      font-size: 15px;
-      color: #8e989f;
+      @include paragraph;
       margin-bottom: 50px;
-      margin-top: 15px;
-      line-height: 30px;
     }
     button {
       @include button;

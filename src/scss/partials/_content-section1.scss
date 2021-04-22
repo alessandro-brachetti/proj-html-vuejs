@@ -1,0 +1,35 @@
+.online-marketing {
+  @include container-center(60%);
+  .online-marketing-wrapper {
+    width: calc(100% / 3);
+    margin: 100px 0;
+  }
+  .online-marketing-img {
+    padding-right: 20px;
+    img {
+      width: 80px;
+      height: 78px;
+    }
+  }
+  .online-marketing-info {
+    h3 {
+      font-size: 23px;
+      font-weight: 400;
+    }
+    p {
+      @include paragraph;
+      margin-bottom: 30px;
+    }
+    ul {
+      li {
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 15px;
+        i {
+          color: $primary-blue;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}

@@ -4,9 +4,22 @@
 }
 
 @mixin button {
-  padding: 13px 17px;
-  border-radius: 3px;
+  padding: 15px 20px;
+  border-radius: 5px;
   background-color: $primary-blue;
   color: #fff;
   cursor: pointer;
+}
+
+@mixin paragraph {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e989f;
+  line-height: 25px;
+  margin-top: 15px;
+}
+
+@mixin section-title {
+  font-size: 35px;
+  font-weight: 400;
 }

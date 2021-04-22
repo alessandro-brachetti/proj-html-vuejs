@@ -6,19 +6,31 @@
   list-style: none;
 }
 
-@for $i from 1 through 8 {
+@for $i from 1 through 16 {
   .pt-#{$i} {
     padding-top: 0.25em * $i;
   }
 }
 
-@for $i from 1 through 8 {
+@for $i from 1 through 16 {
   .pb-#{$i} {
     padding-bottom: 0.25em * $i;
   }
 }
 
+.pr-40p {
+  padding-right: 40px;
+}
+.mr-20p {
+  margin-right: 30px;
+}
 
-.pl-30 {
-  padding-left: 30px;
+.blue {
+  color: #377DFF;
+}
+.green {
+  color: #6CDAC1;
+}
+.orange {
+  color: #FF796D;
 }

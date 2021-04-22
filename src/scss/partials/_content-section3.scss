@@ -1,0 +1,53 @@
+.features {
+  background-image: url('../../dist/img/14.png');
+  background-repeat: no-repeat;
+  background-position: -25% 0%;
+  padding-bottom: 200px;
+  .features-container {
+    @include container-center(60%);
+    padding-top: 120px;
+    .features-text-wrapper {
+      align-items: center;
+      margin-bottom: 20px;
+      .features-text {
+        width: 70%;
+        h3 {
+          @include section-title;
+        }
+        p {
+          width: 70%;
+          @include paragraph;
+        }
+      }
+      .features-btn {
+        width: 30%;
+        text-align: center;
+        button {
+          @include button;
+          font-size: 16px;
+        }
+      }
+    }
+    .features-cards-wrapper {
+      flex-wrap: wrap;
+      .card {
+        width: calc(100%/4 - 30px);
+        padding: 20px 15px;
+        margin-top: 30px;
+        border-radius: 3px;
+        box-shadow: 0 0 60px #00000026;
+        h4 {
+          font-size: 18px;
+          font-weight: 400;
+          padding-bottom: 20px;
+        }
+        .card-icon {
+          i {
+            font-size: 50px;
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
