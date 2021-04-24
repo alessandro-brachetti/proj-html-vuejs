@@ -1,7 +1,10 @@
 .d-flex {
   display: flex;
 }
-
+.f-left {
+  width: calc(50% - 15px);
+  float: left;
+}
 .no-style {
   list-style: none;
 }
@@ -21,16 +24,22 @@
 .pr-40p {
   padding-right: 40px;
 }
-.mr-20p {
-  margin-right: 30px;
-}
 
 .blue {
-  color: #377DFF;
+  color: $primary-blue;
 }
 .green {
   color: #6CDAC1;
 }
 .orange {
   color: #FF796D;
+}
+.bg-primary {
+  background-color: $primary-blue;
+}
+.bg-black {
+  background-color: #000;
+}
+.mt-10p {
+  margin-top: 10px;
 }

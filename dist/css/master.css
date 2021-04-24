@@ -14,6 +14,11 @@ body {
   display: flex;
 }
 
+.f-left {
+  width: calc(50% - 15px);
+  float: left;
+}
+
 .no-style {
   list-style: none;
 }
@@ -150,12 +155,8 @@ body {
   padding-right: 40px;
 }
 
-.mr-20p {
-  margin-right: 30px;
-}
-
 .blue {
-  color: #377DFF;
+  color: #FFC037;
 }
 
 .green {
@@ -164,6 +165,18 @@ body {
 
 .orange {
   color: #FF796D;
+}
+
+.bg-primary {
+  background-color: #FFC037;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.mt-10p {
+  margin-top: 10px;
 }
 
 .navbar {
@@ -193,9 +206,9 @@ body {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
-  color: #377DFF;
+  color: #FFC037;
   padding-left: 0;
-  border-bottom: 2px solid #377DFF;
+  border-bottom: 2px solid #FFC037;
 }
 .navbar .navbar-menu .navbar-icons {
   padding-left: 50px;
@@ -209,7 +222,7 @@ body {
 }
 .navbar .navbar-menu .navbar-icons span {
   color: #fff;
-  background-color: #377DFF;
+  background-color: #FFC037;
   border-radius: 50%;
   padding: 0 6px;
   font-size: 13px;
@@ -221,12 +234,13 @@ body {
   padding-left: 50px;
 }
 .navbar .navbar-menu .btn-wrapper button {
-  padding: 15px 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 12px 22px;
   border-radius: 5px;
-  background-color: #377DFF;
+  background-color: #FFC037;
   color: #fff;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -254,9 +268,10 @@ body {
   margin-bottom: 50px;
 }
 .jumbo .jumbo-left button {
-  padding: 15px 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 12px 22px;
   border-radius: 5px;
-  background-color: #377DFF;
+  background-color: #FFC037;
   color: #fff;
   cursor: pointer;
   font-size: 16px;
@@ -302,7 +317,7 @@ body {
   padding-bottom: 15px;
 }
 .online-marketing .online-marketing-info ul li i {
-  color: #377DFF;
+  color: #FFC037;
   padding-right: 20px;
 }
 
@@ -338,7 +353,7 @@ body {
 .tips .tips-info .reporting .reporting-text-wrapper h4 {
   font-size: 19px;
   font-weight: 500;
-  color: #377DFF;
+  color: #FFC037;
 }
 .tips .tips-info .reporting .reporting-text-wrapper p {
   font-size: 15px;
@@ -370,12 +385,15 @@ body {
   width: 50%;
   padding-left: 30px;
 }
+.tips .tips-img img {
+  width: 100%;
+}
 
 .features {
   background-image: url("../../dist/img/14.png");
   background-repeat: no-repeat;
   background-position: -25% 0%;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 .features .features-container {
   width: 60%;
@@ -406,20 +424,22 @@ body {
   text-align: center;
 }
 .features .features-container .features-text-wrapper .features-btn button {
-  padding: 15px 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 12px 22px;
   border-radius: 5px;
-  background-color: #377DFF;
+  background-color: #FFC037;
   color: #fff;
   cursor: pointer;
   font-size: 16px;
 }
 .features .features-container .features-cards-wrapper {
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .features .features-container .features-cards-wrapper .card {
-  width: calc(100%/4 - 30px);
+  width: calc(100%/4 - 20px);
   padding: 20px 15px;
-  margin-top: 30px;
+  margin-top: 25px;
   border-radius: 3px;
   box-shadow: 0 0 60px #00000026;
 }
@@ -431,4 +451,270 @@ body {
 .features .features-container .features-cards-wrapper .card .card-icon i {
   font-size: 50px;
   padding-bottom: 20px;
+}
+
+.testimonials {
+  background: linear-gradient(0deg, white 25%, #f2f7ff 72%);
+}
+.testimonials .testimonials-container {
+  background-image: url("../../dist/img/15.png");
+  background-repeat: no-repeat;
+}
+.testimonials .testimonials-container .testimonials-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 110px;
+}
+.testimonials .testimonials-container .testimonials-wrapper .testimonials-text-wrapper {
+  justify-content: center;
+  text-align: center;
+}
+.testimonials .testimonials-container .testimonials-wrapper .testimonials-text-wrapper .testimonials-text {
+  width: 45%;
+}
+.testimonials .testimonials-container .testimonials-wrapper .testimonials-text-wrapper .testimonials-text h3 {
+  font-size: 35px;
+  font-weight: 400;
+}
+.testimonials .testimonials-container .testimonials-wrapper .testimonials-text-wrapper .testimonials-text p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e989f;
+  line-height: 25px;
+  margin-top: 15px;
+}
+.testimonials .testimonials-container .testimonials-wrapper .testimonials-card-wrapper {
+  justify-content: space-around;
+  margin-top: 80px;
+}
+.testimonials .testimonials-container .testimonials-wrapper .testimonials-card-wrapper .testimonials-card {
+  margin-bottom: 60px;
+  flex-direction: column;
+  position: relative;
+  width: calc(100%/2 - 60px);
+  border-radius: 3px;
+  box-shadow: 0 0 60px #00000026;
+  padding: 40px 30px;
+  background-image: url("../../dist/img/quotes.png");
+  background-repeat: no-repeat;
+  background-position: 50% 65%;
+  background-size: 150px 150px;
+}
+.testimonials .testimonials-container .testimonials-wrapper .testimonials-card-wrapper .testimonials-card img {
+  align-self: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.testimonials .testimonials-container .testimonials-wrapper .testimonials-card-wrapper .testimonials-card h4 {
+  align-self: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 30px 0;
+}
+.testimonials .testimonials-container .testimonials-wrapper .testimonials-card-wrapper .testimonials-card span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e989f;
+}
+.testimonials .testimonials-container .testimonials-wrapper .testimonials-card-wrapper .testimonials-card p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e989f;
+  line-height: 25px;
+  margin-top: 15px;
+}
+.testimonials .testimonials-container .testimonials-wrapper .testimonials-dots-wrapper {
+  margin-bottom: 100px;
+  text-align: center;
+}
+.testimonials .testimonials-container .testimonials-wrapper .testimonials-dots-wrapper .dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 4px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.posts {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.posts .posts-text {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.posts .posts-text h3 {
+  font-size: 35px;
+  font-weight: 400;
+}
+.posts .posts-text p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e989f;
+  line-height: 25px;
+  margin-top: 15px;
+}
+.posts .posts-card-wrapper {
+  justify-content: space-between;
+}
+.posts .posts-card-wrapper .posts-card {
+  width: calc(100%/3 - 20px);
+  border: 1px solid #00000026;
+  border-radius: 5px;
+  padding: 10px;
+}
+.posts .posts-card-wrapper .posts-card .card-img-wrapper {
+  position: relative;
+}
+.posts .posts-card-wrapper .posts-card .card-img-wrapper img {
+  width: 100%;
+}
+.posts .posts-card-wrapper .posts-card .card-img-wrapper .card-date {
+  background-color: #FFF;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e989f;
+  position: absolute;
+  top: 4%;
+  left: 3%;
+}
+.posts .posts-card-wrapper .posts-card .card-text-wrapper {
+  width: 80%;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.posts .posts-card-wrapper .posts-card .card-text-wrapper h4 {
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+.posts .posts-card-wrapper .posts-card .card-text-wrapper p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e989f;
+  line-height: 25px;
+  margin-top: 15px;
+}
+
+.contact {
+  width: 60%;
+  margin: 0 auto;
+  border-bottom: 1px solid #00000014;
+}
+.contact .contact-text-wrapper {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.contact .contact-text-wrapper h3 {
+  font-size: 35px;
+  font-weight: 400;
+}
+.contact .contact-text-wrapper p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e989f;
+  line-height: 25px;
+  margin-top: 15px;
+}
+.contact .contact-content-container {
+  justify-content: space-between;
+}
+.contact .contact-content-container .contact-img-wrapper {
+  width: calc(50% - 20px);
+}
+.contact .contact-content-container .contact-img-wrapper img {
+  width: 100%;
+}
+.contact .contact-content-container .contact-info-wrapper {
+  width: calc(50% - 20px);
+}
+.contact .contact-content-container .contact-info-wrapper img {
+  margin-bottom: 25px;
+}
+.contact .contact-content-container .contact-info-wrapper h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.contact .contact-content-container .contact-info-wrapper p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e989f;
+  line-height: 25px;
+  margin-top: 15px;
+}
+.contact .contact-content-container .contact-info-wrapper .email {
+  margin-top: 0px;
+}
+.contact .contact-content-container .contact-info-wrapper .socials-wrapper {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.contact .contact-content-container .contact-info-wrapper .socials-wrapper .icon {
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  color: #FFC037;
+  border: 1px solid #00000014;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.contact .contact-content-container .contact-info-wrapper .socials-wrapper .icon i {
+  font-size: 15px;
+  cursor: pointer;
+}
+.contact .contact-content-container .contact-info-wrapper .contact-form {
+  margin-bottom: 100px;
+}
+.contact .contact-content-container .contact-info-wrapper .contact-form input {
+  border: 1px solid #00000026;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #495057;
+  padding: 10px 10px;
+  margin-top: 30px;
+  border: 1px solid #EFF1FE;
+  border-radius: 3px;
+}
+.contact .contact-content-container .contact-info-wrapper .contact-form inputnth:first-child {
+  width: 50%;
+}
+.contact .contact-content-container .contact-info-wrapper .contact-form textarea {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #00000026;
+  width: 100%;
+  margin: 30px 0;
+  border: 2px solid #EFF1FE;
+  border-radius: 3px;
+  padding: 10px 10px;
+}
+.contact .contact-content-container .contact-info-wrapper .contact-form textarea::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact .contact-content-container .contact-info-wrapper .contact-form textarea:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact .contact-content-container .contact-info-wrapper .contact-form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact .contact-content-container .contact-info-wrapper .contact-form button {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  padding: 12px 22px;
+  border-radius: 5px;
+  background-color: #FFC037;
+  color: #fff;
+  cursor: pointer;
 }

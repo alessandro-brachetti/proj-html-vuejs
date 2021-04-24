@@ -2,7 +2,7 @@
   background-image: url('../../dist/img/14.png');
   background-repeat: no-repeat;
   background-position: -25% 0%;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   .features-container {
     @include container-center(60%);
     padding-top: 120px;
@@ -30,10 +30,11 @@
     }
     .features-cards-wrapper {
       flex-wrap: wrap;
+      justify-content: space-between;
       .card {
-        width: calc(100%/4 - 30px);
+        width: calc(100%/4 - 20px);
         padding: 20px 15px;
-        margin-top: 30px;
+        margin-top: 25px;
         border-radius: 3px;
         box-shadow: 0 0 60px #00000026;
         h4 {

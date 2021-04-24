@@ -1,0 +1,53 @@
+.posts {
+  @include container-center(60%);
+  margin-bottom: 100px;
+  .posts-text {
+    text-align: center;
+    margin-bottom: 100px;
+    h3 {
+      @include section-title;
+    }
+    p {
+      @include paragraph;
+    }
+  }
+  .posts-card-wrapper {
+    justify-content: space-between;
+    .posts-card {
+      width: calc(100%/3 - 20px);
+      border: 1px solid #00000026;
+      border-radius: 5px;
+      padding: 10px;
+      .card-img-wrapper {
+        position: relative;
+        img {
+          width: 100%;
+        }
+        .card-date {
+          background-color: #FFF;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 15px;
+          font-weight: 500;
+          color: #8e989f;
+          position: absolute;
+          top: 4%;
+          left: 3%;
+        }
+      }
+      .card-text-wrapper {
+        width: 80%;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        h4 {
+          font-size: 18px;
+          font-weight: 500;
+          padding-top: 20px;
+        }
+        p {
+          @include paragraph;
+        }
+      }
+    }
+  }
+}

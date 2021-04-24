@@ -21,7 +21,7 @@
           </div>
           <div class="navbar-menu d-flex">
             <ul class="no-style d-flex" v-for="link in navbarMenu">
-              <li>{{ link.name }}</li>
+              <li><a :href="link.url"></a>{{ link.name }}</li>
             </ul>
             <div class="navbar-icons d-flex">
               <i class="fas fa-search"></i>
@@ -132,19 +132,19 @@
               </div>
             </div>
             <div class="features-cards-wrapper d-flex">
-              <div class="card mr-20p">
+              <div class="card">
                 <h4>Customized Invoices</h4>
                 <div class="card-icon">
                   <i class="fas fa-chart-line blue"></i>
                 </div>
               </div>
-              <div class="card mr-20p">
+              <div class="card">
                 <h4>Stock Management</h4>
                 <div class="card-icon">
                   <i class="far fa-paper-plane orange"></i>
                 </div>
               </div>
-              <div class="card mr-20p">
+              <div class="card">
                 <h4>Receivable & Payables</h4>
                 <div class="card-icon">
                   <i class="fas fa-award green"></i>
@@ -156,25 +156,25 @@
                   <i class="fas fa-user-tie blue"></i>
                 </div>
               </div>
-              <div class="card mr-20p">
+              <div class="card">
                 <h4>Powerful & Secure</h4>
                 <div class="card-icon">
                   <i class="fas fa-network-wired orange"></i>
                 </div>
               </div>
-              <div class="card mr-20p">
+              <div class="card">
                 <h4>Fastest Return Filing</h4>
                 <div class="card-icon">
                   <i class="fas fa-award green"></i>
                 </div>
               </div>
-              <div class="card mr-20p">
+              <div class="card">
                 <h4>Monthly Detailed</h4>
                 <div class="card-icon">
                   <i class="fas fa-file-signature blue"></i>
                 </div>
               </div>
-              <div class="card mr-20p">
+              <div class="card">
                 <h4>Product Management</h4>
                 <div class="card-icon">
                   <i class="far fa-thumbs-up orange"></i>
@@ -183,6 +183,117 @@
             </div>
           </div>
 
+        </section>
+        <section class="testimonials">
+          <div class="testimonials-container">
+            <div class="testimonials-wrapper">
+              <div class="testimonials-text-wrapper d-flex">
+                <div class="testimonials-text">
+                  <h3>Our Testimonials</h3>
+                  <p>If you are planning on developing a product landing app or website, take a look at this beautiful-crafted</p>
+                </div>
+              </div>
+              <div class="testimonials-card-wrapper d-flex">
+                <div class="testimonials-card d-flex">
+                  <img src="./dist/img/26.jpeg" alt="foto di una donna">
+                  <h4>Julia Aann<span> - COO Sofbox</span></h4>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.</p>
+                </div>
+                <div class="testimonials-card d-flex">
+                  <img src="./dist/img/27.jpeg" alt="foto di una uomo">
+                  <h4>Mac Znder<span> - Manager Sofbox</span></h4>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.</p>
+                </div>
+              </div>
+              <div class="testimonials-dots-wrapper">
+                <span class="dot bg-primary"></span>
+                <span class="dot bg-black"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="posts">
+          <div class="posts-text">
+            <h3>Latest Posts</h3>
+            <p>If you are planning on developing a product landing.</p>
+          </div>
+          <div class="posts-card-wrapper d-flex">
+            <div class="posts-card">
+              <div class="card-img-wrapper">
+                <img src="./dist/img/19.jpg" alt="foto di un calendario">
+                <div class="card-date">
+                  November 28, 2019
+                </div>
+              </div>
+              <div class="card-text-wrapper">
+                <h4>Life Lack Meaning</h4>
+                <p>It is a long established faact that a reader will be distracted by the readable.</p>
+              </div>
+            </div>
+            <div class="posts-card">
+              <div class="card-img-wrapper">
+                <img src="./dist/img/18.jpg" alt="foto di un orologio">
+                <div class="card-date">
+                  November 28, 2019
+                </div>
+              </div>
+              <div class="card-text-wrapper">
+                <h4>Life Lack Meaning</h4>
+                <p>It is a long established faact that a reader will be distracted by the readable.</p>
+              </div>
+            </div>
+            <div class="posts-card">
+              <div class="card-img-wrapper">
+                <img src="./dist/img/17.jpg" alt="foto di emails">
+                <div class="card-date">
+                  November 28, 2019
+                </div>
+              </div>
+              <div class="card-text-wrapper">
+                <h4>Life Lack Meaning</h4>
+                <p>It is a long established faact that a reader will be distracted by the readable.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact">
+          <div class="contact-text-wrapper">
+            <h3>Contact with our team</h3>
+            <p>If you are planning on developing a product landing.</p>
+          </div>
+          <div class="contact-content-container d-flex">
+            <div class="contact-img-wrapper">
+              <img src="./dist/img/map-2.png" alt="">
+            </div>
+            <div class="contact-info-wrapper">
+              <img src="./dist/img/35.png" alt="">
+              <h4>9840 Shore St. Fund Du Lac, WI 54935</h4>
+              <p class="phone">0 1223 456 789</p>
+              <p class="email">mail@sofbox.com</p>
+              <div class="socials-wrapper d-flex">
+                <div class="fb icon d-flex">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="twitter icon d-flex">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div class="git-hub icon d-flex">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="instagram icon d-flex">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+              <h4>Get in Touch</h4>
+              <form class="contact-form" action="index.html" method="post">
+                <input class="f-left" type="text" name="" placeholder="Your Name" style="margin-right: 30px;">
+                <input class="f-left" type="text" name="" placeholder="Your Email">
+                <input type="text" name="" placeholder="Your Subject" style="width: 100%;">
+                <textarea name="name" rows="11" cols="80" placeholder="Your Message"></textarea>
+                <button type="button" name="button">Send Message</button>
+              </form>
+            </div>
+          </div>
         </section>
       </main>
       <footer>
