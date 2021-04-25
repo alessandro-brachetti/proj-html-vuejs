@@ -21,7 +21,7 @@
           </div>
           <div class="navbar-menu d-flex">
             <ul class="no-style d-flex" v-for="link in navbarMenu">
-              <li><a :href="link.url"></a>{{ link.name }}</li>
+              <li><a class="no-style" :href="link.url">{{ link.name }}</a></li>
             </ul>
             <div class="navbar-icons d-flex">
               <i class="fas fa-search"></i>
@@ -31,7 +31,6 @@
             <div class="btn-wrapper">
               <button type="button" name="button">Get Started</button>
             </div>
-
           </div>
         </div>
         <div class="jumbo d-flex">
@@ -297,7 +296,24 @@
         </section>
       </main>
       <footer>
-
+        <div class="footer-content-wrapper d-flex">
+          <div class="copyright">
+            <img src="./dist/img/35.png" alt="logo sofbox">
+            <p class="slogan">It is a long established fact that a reader will be distracted by the readable content.</p>
+            <p>Copyright @ 2018 <span>Sofbox</span></p>
+          </div>
+          <div class="footer-links d-flex" v-for="item in footerLinks">
+            <div class="footer-links-wrapper">
+              <h4>{{ item.title }}</h4>
+              <ul class="no-style">
+                <li v-for=" link in item.links"><a class="no-style" :href="link.url">{{ link.name }}</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="arrow-up">
+          <i class="fas fa-chevron-up"></i>        
+        </div>
       </footer>
     </div>
 

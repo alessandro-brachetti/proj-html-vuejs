@@ -24,8 +24,63 @@ var app = new Vue({
       name: 'Testimonials',
       url: ''
     }, {
-      name: 'Contact Us',
+      name: 'Contact US',
       url: ''
+    }],
+    footerLinks: [{
+      title: 'Menu',
+      links: [{
+        name: 'About Us',
+        url: 'http://www.google.com'
+      }, {
+        name: 'Theme',
+        url: ''
+      }, {
+        name: 'Features',
+        url: ''
+      }, {
+        name: 'Pricing',
+        url: ''
+      }, {
+        name: 'Blog',
+        url: ''
+      }]
+    }, {
+      title: 'About Us',
+      links: [{
+        name: 'About Sofbox',
+        url: ''
+      }, {
+        name: 'Roadmap',
+        url: ''
+      }, {
+        name: 'How it Work',
+        url: ''
+      }, {
+        name: 'Team',
+        url: ''
+      }, {
+        name: 'News',
+        url: ''
+      }]
+    }, {
+      title: 'Quick Links',
+      links: [{
+        name: 'About Us',
+        url: ''
+      }, {
+        name: 'Theme',
+        url: ''
+      }, {
+        name: 'Features',
+        url: ''
+      }, {
+        name: 'Pricing',
+        url: ''
+      }, {
+        name: 'Blog',
+        url: ''
+      }]
     }]
   }
 });

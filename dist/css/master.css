@@ -21,6 +21,7 @@ body {
 
 .no-style {
   list-style: none;
+  text-decoration: none;
 }
 
 .pt-1 {
@@ -197,18 +198,23 @@ body {
   align-items: center;
 }
 .navbar .navbar-menu ul:not(:first-child) li {
-  font-size: 15px;
-  font-weight: 500;
   cursor: pointer;
   padding-left: 30px;
 }
-.navbar .navbar-menu ul:first-child {
+.navbar .navbar-menu ul:not(:first-child) li a {
   font-size: 15px;
   font-weight: 500;
+  color: #000;
+}
+.navbar .navbar-menu ul:first-child {
   cursor: pointer;
-  color: #FFC037;
   padding-left: 0;
   border-bottom: 2px solid #FFC037;
+}
+.navbar .navbar-menu ul:first-child a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #FFC037;
 }
 .navbar .navbar-menu .navbar-icons {
   padding-left: 50px;
@@ -236,7 +242,7 @@ body {
 .navbar .navbar-menu .btn-wrapper button {
   font-family: "Poppins", sans-serif;
   padding: 12px 22px;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #FFC037;
   color: #fff;
   cursor: pointer;
@@ -270,7 +276,7 @@ body {
 .jumbo .jumbo-left button {
   font-family: "Poppins", sans-serif;
   padding: 12px 22px;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #FFC037;
   color: #fff;
   cursor: pointer;
@@ -426,7 +432,7 @@ body {
 .features .features-container .features-text-wrapper .features-btn button {
   font-family: "Poppins", sans-serif;
   padding: 12px 22px;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #FFC037;
   color: #fff;
   cursor: pointer;
@@ -563,7 +569,7 @@ body {
 }
 .posts .posts-card-wrapper .posts-card {
   width: calc(100%/3 - 20px);
-  border: 1px solid #00000026;
+  border: 1px solid #00000014;
   border-radius: 5px;
   padding: 10px;
 }
@@ -605,7 +611,6 @@ body {
 .contact {
   width: 60%;
   margin: 0 auto;
-  border-bottom: 1px solid #00000014;
 }
 .contact .contact-text-wrapper {
   text-align: center;
@@ -713,8 +718,72 @@ body {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   padding: 12px 22px;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #FFC037;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  border-top: 1px solid #00000014;
+}
+footer .footer-content-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+footer .footer-content-wrapper > * {
+  width: calc(100%/4);
+}
+footer .footer-content-wrapper .copyright img {
+  width: 50%;
+}
+footer .footer-content-wrapper .copyright p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e989f;
+  line-height: 25px;
+  margin-top: 15px;
+}
+footer .footer-content-wrapper .copyright .slogan {
+  margin-bottom: 50px;
+}
+footer .footer-content-wrapper .copyright span {
+  color: #FFC037;
+}
+footer .footer-content-wrapper .footer-links {
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-content-wrapper .footer-links .footer-links-wrapper h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+footer .footer-content-wrapper .footer-links .footer-links-wrapper ul {
+  margin-top: 25px;
+}
+footer .footer-content-wrapper .footer-links .footer-links-wrapper ul li {
+  margin-top: 15px;
+}
+footer .footer-content-wrapper .footer-links .footer-links-wrapper ul li a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e989f;
+}
+footer .arrow-up {
+  background-color: #00000040;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+  float: right;
+  margin-bottom: 30px;
+  margin-right: 15px;
+}
+footer .arrow-up i {
+  margin-top: 18px;
+  font-size: 20px;
   color: #fff;
   cursor: pointer;
 }
