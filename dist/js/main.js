@@ -31,7 +31,7 @@ var app = new Vue({
       title: 'Menu',
       links: [{
         name: 'About Us',
-        url: 'http://www.google.com'
+        url: ''
       }, {
         name: 'Theme',
         url: ''

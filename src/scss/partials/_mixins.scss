@@ -10,6 +10,10 @@
   background-color: $primary-blue;
   color: #fff;
   cursor: pointer;
+  &:hover{
+    background-color: #1E1E1E;
+    color: #fff;
+  }
 }
 
 @mixin paragraph {

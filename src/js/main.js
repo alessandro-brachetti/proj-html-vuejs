@@ -3,6 +3,7 @@ Vue.config.devtools = true;
 var app = new Vue({
   el: '#root',
   data: {
+    //MENU LINKS
     navbarMenu: [
       {
         name: 'Home',
@@ -23,6 +24,7 @@ var app = new Vue({
         url: '',
       },
     ],
+    //FOOTER LINKS
     footerLinks: [
       {
       title: 'Menu',

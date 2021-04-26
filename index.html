@@ -136,11 +136,23 @@
                 <div class="card-icon">
                   <i class="fas fa-chart-line blue"></i>
                 </div>
+                <div class="border-first">
+
+                </div>
+                <div class="border-second">
+
+                </div>
               </div>
               <div class="card">
                 <h4>Stock Management</h4>
                 <div class="card-icon">
                   <i class="far fa-paper-plane orange"></i>
+                </div>
+                <div class="border-first">
+
+                </div>
+                <div class="border-second">
+
                 </div>
               </div>
               <div class="card">
@@ -148,11 +160,23 @@
                 <div class="card-icon">
                   <i class="fas fa-award green"></i>
                 </div>
+                <div class="border-first">
+
+                </div>
+                <div class="border-second">
+
+                </div>
               </div>
               <div class="card">
                 <h4>Manage Buying</h4>
                 <div class="card-icon">
                   <i class="fas fa-user-tie blue"></i>
+                </div>
+                <div class="border-first">
+
+                </div>
+                <div class="border-second">
+
                 </div>
               </div>
               <div class="card">
@@ -160,11 +184,23 @@
                 <div class="card-icon">
                   <i class="fas fa-network-wired orange"></i>
                 </div>
+                <div class="border-first">
+
+                </div>
+                <div class="border-second">
+
+                </div>
               </div>
               <div class="card">
                 <h4>Fastest Return Filing</h4>
                 <div class="card-icon">
                   <i class="fas fa-award green"></i>
+                </div>
+                <div class="border-first">
+
+                </div>
+                <div class="border-second">
+
                 </div>
               </div>
               <div class="card">
@@ -172,11 +208,23 @@
                 <div class="card-icon">
                   <i class="fas fa-file-signature blue"></i>
                 </div>
+                <div class="border-first">
+
+                </div>
+                <div class="border-second">
+
+                </div>
               </div>
               <div class="card">
                 <h4>Product Management</h4>
                 <div class="card-icon">
                   <i class="far fa-thumbs-up orange"></i>
+                </div>
+                <div class="border-first">
+
+                </div>
+                <div class="border-second">
+
                 </div>
               </div>
             </div>
@@ -197,6 +245,12 @@
                   <img src="./dist/img/26.jpeg" alt="foto di una donna">
                   <h4>Julia Aann<span> - COO Sofbox</span></h4>
                   <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.</p>
+                </div>
+                <div class="second-card">
+
+                </div>
+                <div class="third-card">
+
                 </div>
                 <div class="testimonials-card d-flex">
                   <img src="./dist/img/27.jpeg" alt="foto di una uomo">
@@ -302,21 +356,22 @@
             <p class="slogan">It is a long established fact that a reader will be distracted by the readable content.</p>
             <p>Copyright @ 2018 <span>Sofbox</span></p>
           </div>
+          <!-- V-FOR OGGETTO IN FOOTERLINKS -->
           <div class="footer-links d-flex" v-for="item in footerLinks">
             <div class="footer-links-wrapper">
               <h4>{{ item.title }}</h4>
               <ul class="no-style">
+                <!-- V-FOR LINK IN ITEM.LINKS -->
                 <li v-for=" link in item.links"><a class="no-style" :href="link.url">{{ link.name }}</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="arrow-up">
-          <i class="fas fa-chevron-up"></i>        
+          <i class="fas fa-chevron-up"></i>
         </div>
       </footer>
     </div>
-
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>

@@ -9,7 +9,7 @@
   list-style: none;
   text-decoration: none;
 }
-
+// PADDING & MARGIN
 @for $i from 1 through 16 {
   .pt-#{$i} {
     padding-top: 0.25em * $i;
@@ -25,7 +25,10 @@
 .pr-40p {
   padding-right: 40px;
 }
-
+.mt-10p {
+  margin-top: 10px;
+}
+//BACKGROUND AND COLOR
 .blue {
   color: $primary-blue;
 }
@@ -40,7 +43,4 @@
 }
 .bg-black {
   background-color: #000;
-}
-.mt-10p {
-  margin-top: 10px;
 }

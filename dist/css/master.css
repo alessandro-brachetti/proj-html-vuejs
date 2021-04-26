@@ -249,6 +249,10 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+.navbar .navbar-menu .btn-wrapper button:hover {
+  background-color: #1E1E1E;
+  color: #fff;
+}
 
 .jumbo {
   width: 75%;
@@ -281,6 +285,10 @@ body {
   color: #fff;
   cursor: pointer;
   font-size: 16px;
+}
+.jumbo .jumbo-left button:hover {
+  background-color: #1E1E1E;
+  color: #fff;
 }
 .jumbo .jumbo-right {
   width: 55%;
@@ -438,6 +446,10 @@ body {
   cursor: pointer;
   font-size: 16px;
 }
+.features .features-container .features-text-wrapper .features-btn button:hover {
+  background-color: #1E1E1E;
+  color: #fff;
+}
 .features .features-container .features-cards-wrapper {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -448,6 +460,27 @@ body {
   margin-top: 25px;
   border-radius: 3px;
   box-shadow: 0 0 60px #00000026;
+  position: relative;
+}
+.features .features-container .features-cards-wrapper .card:hover {
+  background-color: #6CDAC1;
+  color: #FFF;
+  box-shadow: 0 0 60px #6CDAC1;
+}
+.features .features-container .features-cards-wrapper .card:hover i {
+  color: #fff;
+}
+.features .features-container .features-cards-wrapper .card:hover .border-first {
+  background-image: repeating-linear-gradient(0deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px), repeating-linear-gradient(90deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px), repeating-linear-gradient(180deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px), repeating-linear-gradient(270deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px);
+  background-size: 0px 100%, 100% 0px, 2px 100%, 100% 2px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.features .features-container .features-cards-wrapper .card:hover .border-second {
+  background-image: repeating-linear-gradient(0deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px), repeating-linear-gradient(90deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px), repeating-linear-gradient(180deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px), repeating-linear-gradient(270deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px);
+  background-size: 0px 100%, 100% 0px, 2px 100%, 100% 2px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
 }
 .features .features-container .features-cards-wrapper .card h4 {
   font-size: 18px;
@@ -457,6 +490,20 @@ body {
 .features .features-container .features-cards-wrapper .card .card-icon i {
   font-size: 50px;
   padding-bottom: 20px;
+}
+.features .features-container .features-cards-wrapper .card .border-first {
+  width: 53px;
+  height: 50px;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+.features .features-container .features-cards-wrapper .card .border-second {
+  width: 62px;
+  height: 58px;
+  position: absolute;
+  bottom: -13px;
+  right: -13px;
 }
 
 .testimonials {
@@ -491,20 +538,21 @@ body {
 }
 .testimonials .testimonials-container .testimonials-wrapper .testimonials-card-wrapper {
   justify-content: space-around;
+  position: relative;
   margin-top: 80px;
 }
 .testimonials .testimonials-container .testimonials-wrapper .testimonials-card-wrapper .testimonials-card {
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   flex-direction: column;
   position: relative;
   width: calc(100%/2 - 60px);
-  border-radius: 3px;
-  box-shadow: 0 0 60px #00000026;
   padding: 40px 30px;
+  border-radius: 3px;
   background-image: url("../../dist/img/quotes.png");
   background-repeat: no-repeat;
   background-position: 50% 65%;
   background-size: 150px 150px;
+  box-shadow: 0 20px 50px #00000026, 0 40px 0 -30px #fff, 0 40px 20px -29px #00000026, 0 60px 0 -40px #fff, 0 60px 20px -39px #00000026;
 }
 .testimonials .testimonials-container .testimonials-wrapper .testimonials-card-wrapper .testimonials-card img {
   align-self: center;
@@ -670,10 +718,13 @@ body {
   border: 1px solid #00000014;
   border-radius: 5px;
   margin-right: 10px;
+  cursor: pointer;
+}
+.contact .contact-content-container .contact-info-wrapper .socials-wrapper .icon:hover i {
+  color: #1E1E1E;
 }
 .contact .contact-content-container .contact-info-wrapper .socials-wrapper .icon i {
   font-size: 15px;
-  cursor: pointer;
 }
 .contact .contact-content-container .contact-info-wrapper .contact-form {
   margin-bottom: 100px;
@@ -722,6 +773,10 @@ body {
   background-color: #FFC037;
   color: #fff;
   cursor: pointer;
+}
+.contact .contact-content-container .contact-info-wrapper .contact-form button:hover {
+  background-color: #1E1E1E;
+  color: #fff;
 }
 
 footer {
@@ -780,10 +835,10 @@ footer .arrow-up {
   float: right;
   margin-bottom: 30px;
   margin-right: 15px;
+  cursor: pointer;
 }
 footer .arrow-up i {
   margin-top: 18px;
   font-size: 20px;
   color: #fff;
-  cursor: pointer;
 }

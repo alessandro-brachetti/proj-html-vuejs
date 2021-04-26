@@ -37,6 +37,27 @@
         margin-top: 25px;
         border-radius: 3px;
         box-shadow: 0 0 60px #00000026;
+        position: relative;
+        &:hover {
+          background-color: #6CDAC1;
+          color: #FFF;
+          box-shadow: 0 0 60px #6CDAC1;
+          i {
+            color: #fff;
+          }
+          .border-first {
+            background-image: repeating-linear-gradient(0deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px), repeating-linear-gradient(90deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px), repeating-linear-gradient(180deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px), repeating-linear-gradient(270deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px);
+            background-size: 0px 100%, 100% 0px, 2px 100% , 100% 2px;
+            background-position: 0 0, 0 0, 100% 0, 0 100%;
+            background-repeat: no-repeat;
+          }
+          .border-second {
+            background-image: repeating-linear-gradient(0deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px), repeating-linear-gradient(90deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px), repeating-linear-gradient(180deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px), repeating-linear-gradient(270deg, #6cdac1, #6cdac1 2px, transparent 2px, transparent 8px, #6cdac1 8px);
+            background-size: 0px 100%, 100% 0px, 2px 100% , 100% 2px;
+            background-position: 0 0, 0 0, 100% 0, 0 100%;
+            background-repeat: no-repeat;
+          }
+        }
         h4 {
           font-size: 18px;
           font-weight: 400;
@@ -47,6 +68,22 @@
             font-size: 50px;
             padding-bottom: 20px;
           }
+        }
+        .border-first {
+          width: 53px;
+          height: 50px;
+          position: absolute;
+          bottom: -5px;
+          right: -5px;
+
+        }
+        .border-second {
+          width: 62px;
+          height: 58px;
+          position: absolute;
+          bottom: -13px;
+          right: -13px;
+
         }
       }
     }
